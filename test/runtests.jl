@@ -16,6 +16,8 @@ using ProteinChains
         backbone_scaled = Backbone(Backbone(chain).coords * 0.1)
         backbone_ideal_scaled = idealize(backbone_scaled, scaled_geometry)
         @test all(≈(scaled_geometry.C_N_length), sort(get_bond_lengths(backbone_ideal_scaled)[3:3:end])[1:end-2]) # two gaps
+
+        @test idealize(pdb"1ASS")["A"] == idealize(pdb"1ASS"A)
     end
 
 end

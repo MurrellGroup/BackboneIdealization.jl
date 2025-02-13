@@ -17,13 +17,6 @@ function angle_loss(m::Matrix{<:Real}, ideal::Vector{<:Real}; mask::Vector{Bool}
     sum(abs2, (angles .- ideal) .* mask)
 end
 
-function torsion_loss(m::Matrix{<:Real}, ideal::Vector{<:Real}; mask::Vector{Bool} = ones(Bool, size(m, 2)-3))
-    torsions = get_torsional_angles(Backbone(m))
-    diff = abs.(torsions .- ideal)
-    diff = min.(diff, 2π .- diff)
-    sum(abs2, diff .* mask)
-end
-
 function total_loss(
     coords::Matrix{T}, offsets::Matrix{T},
     ideal_lengths::Vector{T}, ideal_angles::Vector{T},
