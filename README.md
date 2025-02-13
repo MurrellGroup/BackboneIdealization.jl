@@ -21,7 +21,7 @@ julia> chain = pdb"1ASS"A;
 
 julia> idealized = idealize(chain, BackboneGeometry());
 
-julia> round.(get_bond_lengths(ChainedBonds(idealized)), digits=12)
+julia> round.(get_bond_lengths(idealized), digits=12)
 455-element Vector{Float64}:
  1.46
  1.52

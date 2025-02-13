@@ -1,7 +1,7 @@
 name = "BackboneIdealization"
 uuid = "c0a2461d-ad31-482d-b417-21333ed28a5d"
 authors = ["Anton Oresten <antonoresten@gmail.com> and contributors"]
-version = "1.0.1-DEV"
+version = "1.0.2-DEV"
 
 [deps]
 Backboner = "9ac9c2a2-1cfe-46d3-b3fd-6fa470ea56a7"
@@ -23,7 +23,7 @@ Flux = "0.16"
 LinearAlgebra = "1"
 Optimisers = "0.4"
 ParameterSchedulers = "0.4"
-ProteinChains = "0.6"
+ProteinChains = "0.6.2"
 Statistics = "1"
 julia = "1.10"
 
