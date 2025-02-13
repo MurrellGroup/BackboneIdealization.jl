@@ -3,6 +3,16 @@
 [![Build Status](https://github.com/MurrellGroup/BackboneIdealization.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/MurrellGroup/BackboneIdealization.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![Coverage](https://codecov.io/gh/MurrellGroup/BackboneIdealization.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/MurrellGroup/BackboneIdealization.jl)
 
+## Installation
+
+```
+using Pkg
+pkg"registry add https://github.com/MurrellGroup/MurrellGroupRegistry"
+pkg"add BackboneIdealization"
+```
+
+## Usage
+
 ```julia
 julia> using BackboneIdealization, ProteinChains, Backboner
 
