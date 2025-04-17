@@ -1,7 +1,7 @@
 name = "BackboneIdealization"
 uuid = "c0a2461d-ad31-482d-b417-21333ed28a5d"
 authors = ["Anton Oresten <antonoresten@gmail.com> and contributors"]
-version = "1.0.3-DEV"
+version = "0.0.1"
 
 [deps]
 Backboner = "9ac9c2a2-1cfe-46d3-b3fd-6fa470ea56a7"
